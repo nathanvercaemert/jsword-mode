@@ -90,6 +90,10 @@ public class SwordBookDriver extends AbstractBookDriver
         if (mods.isDirectory())
         {
             String[] bookConfs = SwordBookPath.getBookList(mods);
+            for (int i = 0; i < bookConfs.length; i++){
+                System.out.println(bookConfs[i]);
+            }
+            System.exit(0);
 
             // Loop through the entries in this mods.d directory
             for (int i = 0; i < bookConfs.length; i++)
